@@ -1,0 +1,72 @@
+.header{
+  font-family: "Futura", serif;
+  text-align: center;
+}
+
+.photosource {
+  max-width: 100%;
+}
+
+#container {
+  font-family: "Futura", serif;
+  color: white;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+#photo{
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#colors {
+  width: 100%;
+  height: auto;
+  text-align: justify;
+  display: none;
+}
+
+#colors:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+
+.swatch {
+  width: 17%;
+  height: 0;
+  vertical-align: middle;
+  padding-bottom: 10%;
+  padding-top: 7%;
+  display: inline-block;
+  background-color: yellow;
+  margin: auto;
+  position: relative;
+  text-align: center;
+
+}
+
+#swatch1 {
+  background-color: #715880;
+}
+
+#swatch2 {
+  background-color: #FFAB46;
+}
+
+#swatch3 {
+  background-color: #003961;
+}
+
+#swatch4 {
+  background-color: #B4555B;
+}
+
+#swatch5 {
+  background-color: #F14E2D;
+}
