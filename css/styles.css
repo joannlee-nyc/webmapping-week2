@@ -5,9 +5,10 @@
   text-align: center;
 }
 
+/*
 .photosource {
   max-width: 100%;
-}
+} */
 
 #container {
   font-family: "Futura", serif;
@@ -20,10 +21,16 @@
 }
 
 #photo{
-  width: 50%;
+  width: 80%;
   display: inline-block;
   margin-bottom: 20px;
   cursor: pointer;
+}
+
+.volcanoes{
+
+  height: 100%;
+  max-width: 60%;
 }
 
 #colors {
