@@ -66,16 +66,17 @@ data.forEach(function(record) {
         </div>
         <div class = "swatch" id="swatch5">${record.palette[4]}
         </div>
-    </div>
+      </div>
+  </div>
   `)
 
 })
 
 
-  $("swatch1").css("background-color",palette[0]);
-  $("swatch2").css("background-color",palette[1]);
-  $("swatch3").css("background-color",palette[2]);
-  $("swatch4").css("background-color",palette[3]);
-  $("swatch5").css("background-color",palette[4]);
+//  $("swatch1").css("background-color",palette[0]);
+//  $("swatch2").css("background-color",palette[1]);
+//  $("swatch3").css("background-color",palette[2]);
+//  $("swatch4").css("background-color",palette[3]);
+//  $("swatch5").css("background-color",palette[4]);
 
-})
+//})
