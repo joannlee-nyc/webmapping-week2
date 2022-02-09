@@ -23,20 +23,21 @@
 #photo{
   width: 80%;
   display: inline-block;
-  margin-bottom: 20px;
-  cursor: pointer;
+  margin-bottom: 20px
 }
 
 .volcanoes{
 
   height: 100%;
   max-width: 60%;
+  cursor: pointer;
 }
 
 #colors {
   width: 100%;
   height: auto;
   text-align: justify;
+  display: none;
 }
 
 #colors:after {
@@ -58,7 +59,7 @@
   text-align: center;
 
 }
-
+/*
 #swatch1 {
   background-color: #715880;
 }
@@ -77,4 +78,4 @@
 
 #swatch5 {
   background-color: #F14E2D;
-}
+} */
