@@ -1,7 +1,8 @@
 var data = [
   {
     id: 'kilauea1',
-    order: '1',
+    photoorder: 'photo-1',
+    colorsorder: 'colors-1',
     image: 'https://upload.wikimedia.org/wikipedia/commons/3/38/Kilauea_Fissure_8_cone_erupting_on_6-28-2018.jpg',
     palette: [
       '#715880',
@@ -13,7 +14,8 @@ var data = [
   },
   {
     id: 'kilauea2',
-    order: '2',
+    photoorder: 'photo-2',
+    colorsorder: 'colors-2',
     image: 'https://www.travelweekly.com/uploadedImages/Art/2021/1011/T1011KILAUEA_C_HR.jpg?n=9562&width=1540&height=866&mode=crop&Anchor=MiddleCenter',
     palette: [
       '#483F78',
@@ -25,7 +27,8 @@ var data = [
   },
   {
     id: 'kilauea3',
-    order: '3',
+    photoorder: 'photo-3',
+    colorsorder: 'colors-3',
     image: 'https://pbs.twimg.com/media/Euii2H3UUAQ6APt?format=jpg&name=large',
     palette: [
       '#FDAE65',
@@ -44,10 +47,10 @@ var data = [
 data.forEach(function(record) {
   $('#container').append(`
     <div id = "${record.id}" >
-      <div id = "photo">
+      <div id = "photo" class="${record.photoorder}">
       <img class= "volcanoes" src="${record.image}">
       </div>
-      <div id = "colors" class="${record.order}">
+      <div class = "colors" id="${record.colorsorder}">
         <div style='background-color: ${record.palette[0]}' class = "swatch" id="swatch1">${record.palette[0]}
         </div>
         <div style='background-color: ${record.palette[1]}' class = "swatch" id="swatch2">${record.palette[1]}
@@ -65,14 +68,22 @@ data.forEach(function(record) {
 })
 
 
-//these is a listener that responds to clicks on the photo
+//this is a listener that responds to clicks on the photo
 
-//data.forEach(function() {
-//  $("#photo").click(function(){
-//    $("#colors").toggle();
-//  });
-//});
+data.forEach(function() {
+  $(".photo-1").click(function(){
+    $("#colors-1").toggle();
+  });
+  $(".photo-2").click(function(){
+    $("#colors-2").toggle();
+  });
+  $(".photo-3").click(function(){
+    $("#colors-3").toggle();
+  });
+})
 
+//OLD CODE
+/*
 var visible = false
 
 $('#kilauea1').on('click', function () {
@@ -111,3 +122,21 @@ $('#kilauea3').on('click', function () {
   }
 
 })
+*/
+
+/*
+$('#photo').on('click', function() {
+  // fade out all color swatches
+  if ($(this).hasClass('photo-1')) {
+    // fade in the corresponding color swatches
+    $('#colors-1').fadeIn()
+  }
+  if ($(this).hasClass('photo-2')) {
+    // fade in the corresponding color swatches
+    $('#colors-2').fadeIn()
+  }
+  if ($(this).hasClass('photo-3')) {
+    // fade in the corresponding color swatches
+    $('#colors-3').fadeIn()
+  }
+}) */
